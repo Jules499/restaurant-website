@@ -1,0 +1,98 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap');
+
+/*=============== STYLING ===============*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f6f6;
+  color:hsl(0, 0%, 15%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: #fff; /* Background color for menu container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+}
+
+.menu {
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid hsl(189, 19%, 60%);
+  font-family: 'Lora', serif; /* Use Lora font for headings */
+  font-weight: 600;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        font-size: 16px;
+      }
+    
+      .menu-group {
+        grid-template-columns: 1fr;
+      }
+    
+      .menu-item-image {
+        width: 125px;
+        height: 125px;
+      }
+    }
